@@ -12,30 +12,34 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 
 
 $(document).ready(function() {
-  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala").hide();
+  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact").hide();
     $("#tech").click(function() {
-      $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala").hide();
+      $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala,#contact").hide();
       $("#techwala").show();
     });
     $("#cult").click(function() {
-      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala").hide();
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala,#contact").hide();
       $("#cultwala").show();
     });
     $("#presid").click(function() {
-      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala").hide();
+      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact").hide();
       $("#presidwala").show();
     });
     $("#sports").click(function() {
-      $("#home, #about, #gallery, #acadwala, #cultwala, #techwala, #presidwala").hide();
+      $("#home, #about, #gallery, #acadwala, #cultwala, #techwala, #presidwala,#contact").hide();
       $("#sportswala").show();
     });
     $("#acad").click(function() {
-      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #cultwala").hide();
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #cultwala,#contact").hide();
       $("#acadwala").show();
     });
     $("#backhome").click(function() {
-       $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala").hide();
+       $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala,#contact").hide();
        $("#home, #about, #gallery").show(1000);
+    });
+    $("#cont").click(function() {
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala").hide();
+      $("#contact").show(1000);
     });
   });
 
