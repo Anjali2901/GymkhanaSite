@@ -18,6 +18,7 @@ $(document).ready(function() {
 
   /* Hide mobile menu after clicking on a link
     -----------------------------------------------*/
+      $("#navg").hide();
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
