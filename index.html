@@ -62,6 +62,12 @@ font-size: 1.25em;
     height: 900px;
    }
   </style>
+
+  <script type="text/javascript">
+    $("#circle-menu.open ul li:nth-child(1)").click(function() {
+        $("#gallery").show();
+    }); 
+  </script>
 </head>
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 <div id="total">
@@ -139,7 +145,7 @@ font-size: 1.25em;
           <a class="menu-trigger" data-close="" data-open="" href="#"><!-- <i aria-hidden="true" class="fa fa-power-off"></i> --></a>
           <ul>
             <li>
-              <a class="link" href="#"></a>
+              <a class="link" href="#" id="tech"></a>
             </li>
             
             <li>
