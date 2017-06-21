@@ -866,7 +866,7 @@ filter:grayscale(0);
 
   -webkit-transform: translate3D(7em,11em,0);
   -ms-transform: translate3D(7em,11em,0);
-  transform: translate3D(3em,12em,0);
+  transform: translate3D(2.7em,12em,0);
 
 }
 #circle-menu.open ul li:nth-child(4) {
@@ -884,7 +884,7 @@ filter:grayscale(0);
 #circle-menu.open ul li:nth-child(6) {
   -webkit-transform: translate3D(0em,-12em,0);
   -ms-transform: translate3D(0em,-12em,0);
-  transform: translate3D(0em,-12em,0);
+  transform: translate3D(-1em,-12em,0);
 
 }
 #circle-menu.open ul li:hover:nth-child(1) {
