@@ -1,6 +1,8 @@
 
  /* jQuery Pre loader
   -----------------------------------------------*/
+
+
 $(document).ready(function() {
   $("#navg").hide();
 $(window).on('load', function() { // makes sure the whole site is loaded
