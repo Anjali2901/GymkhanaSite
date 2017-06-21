@@ -64,9 +64,11 @@ font-size: 1.25em;
   </style>
 
   <script type="text/javascript">
-    $("#circle-menu.open ul li:nth-child(1)").click(function() {
-        $("#gallery").show();
-    }); 
+  $(document).ready(function() {
+    $("#tech").click(function() {
+        alert("Hey user!");
+    });
+  });
   </script>
 </head>
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
@@ -144,8 +146,8 @@ font-size: 1.25em;
         <div id="circle-menu">
           <a class="menu-trigger" data-close="" data-open="" href="#"><!-- <i aria-hidden="true" class="fa fa-power-off"></i> --></a>
           <ul>
-            <li>
-              <a class="link" href="#" id="tech"></a>
+            <li id="tech">
+              <a class="link" href="#"></a>
             </li>
             
             <li>
@@ -196,7 +198,7 @@ font-size: 1.25em;
       <div class="col-md-4 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Sandy">
+            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Sandy" style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Matty</h2>
           <p class="description">Curabitur vulputate euismod neque et tincidunt.</p>
@@ -206,7 +208,7 @@ font-size: 1.25em;
       <div class="col-md-4 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Lukia">
+            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Kitty</h2>
           <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
@@ -216,7 +218,7 @@ font-size: 1.25em;
       <div class="col-md-4 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Lukia">
+            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Mats Valk</h2>
           <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
@@ -227,7 +229,7 @@ font-size: 1.25em;
       <div class="col-md-4 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Sandy">
+            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Sandy"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Felix Zemdegs</h2>
           <p class="description">Curabitur vulputate euismod neque et tincidunt.</p>
@@ -237,7 +239,7 @@ font-size: 1.25em;
       <div class="col-md-4 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Lukia">
+            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Aditya Goel</h2>
           <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
@@ -247,7 +249,7 @@ font-size: 1.25em;
       <div class="col-md-4 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Lukia">
+            <img src="images/member5.jpg" class="img-responsive img-circle" alt="Lukia" style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Catty Perry</h2>
           <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
