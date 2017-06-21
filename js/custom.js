@@ -1,9 +1,17 @@
 
  /* jQuery Pre loader
   -----------------------------------------------*/
-$(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+$(document).ready(function() {
+  $("#navg").hide();
+$(window).on('load', function() { // makes sure the whole site is loaded
+    $("#status").fadeOut(); // will first fade out the loading animation
+    $("#preloader").delay(500).fadeOut("slow"); // will fade out the white DIV that covers the website.
+    $("#navg").show(1500);
 });
+});
+
+
+
 
 
 $(document).ready(function() {
