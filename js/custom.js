@@ -11,6 +11,34 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 });
 
 
+$(document).ready(function() {
+  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala").hide();
+    $("#tech").click(function() {
+      $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala").hide();
+      $("#techwala").show();
+    });
+    $("#cult").click(function() {
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala").hide();
+      $("#cultwala").show();
+    });
+    $("#presid").click(function() {
+      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala").hide();
+      $("#presidwala").show();
+    });
+    $("#sports").click(function() {
+      $("#home, #about, #gallery, #acadwala, #cultwala, #techwala, #presidwala").hide();
+      $("#sportswala").show();
+    });
+    $("#acad").click(function() {
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #cultwala").hide();
+      $("#acadwala").show();
+    });
+    $("#backhome").click(function() {
+       $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala").hide();
+       $("#home, #about, #gallery").show(1000);
+    });
+  });
+
 
 
 
