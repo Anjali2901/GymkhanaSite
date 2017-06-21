@@ -51,7 +51,7 @@ $(document).ready(function() {
           $(".navbar-right li a").css("font-weight", "500"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
         } else {
           $("#navg").css("background-color", "transparent");
-           $(".navbar-right li a").css("color", "#777");
+           $(".navbar-right li a").css("color", "#999");
           $(".navbar-right li a").css("font-weight", "500"); // if not, change it back to transparent
         }
       });
