@@ -32,12 +32,13 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 	<!-- Google web font  -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style type="text/css">
   html {
     height: 100%;
   }
-#home, #contact
+#home, #contact, #about
 {
   background : url(images/bg.jpg);
   background-size: cover;
@@ -96,7 +97,7 @@ font-size: 1.25em;
 'images/academic.png',
 'images/hint.jpg',
 'images/logo.png',
-'images/member.jpg',
+'images/user.png',
 'images/sports.png',
 'images/sports2.png',
 'images/technical.png',
@@ -331,7 +332,7 @@ font-size: 1.25em;
       <div class="col-md-4 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member.jpg" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Mr. Kshitij Tripathi</h2>
           <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
@@ -396,7 +397,7 @@ This council is responsible for technical standardization, upgradation and advan
       <div class="col-md-4 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member.jpg" class="img-responsive img-circle" alt="Sandy"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Sandy"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Mani</h2>
           <p class="description">Member</p>
@@ -593,7 +594,7 @@ The council responsible for decision-making in all academic matters. This counci
       <div class="col-md-4 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member.jpg" class="img-responsive img-circle" alt="Sandy"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Sandy"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Siddharth Singh</h2>
           <p class="description">Member</p>
@@ -696,7 +697,7 @@ The council responsible for decision-making in all academic matters. This counci
       <div class="col-md-6 col-xs-12 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member.jpg" class="img-responsive img-circle" alt="Lukia" style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Lukia" style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Dhirendra Kumar</h2>
           <p class="description">Member</p>
@@ -748,7 +749,7 @@ This council is in charge of maintaining proper sports infrastructure system in 
       <div class="col-md-6 col-xs-12 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member.jpg" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Rooha Shree</h2>
           <p class="description">Member</p>
@@ -759,7 +760,7 @@ This council is in charge of maintaining proper sports infrastructure system in 
       <div class="col-md-6 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/member.jpg" class="img-responsive img-circle" alt="Sandy"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Sandy"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
           </div>
           <h2 class="heading">Suhas Reddy</h2>
           <p class="description">Member</p>
@@ -913,6 +914,98 @@ Hack In The North is India's largest student held Hackathon and one of the most 
       </div>
 </section>
 
+
+<div id="advisors"> 
+  <section class="techDet" style="margin: 0 auto;text-align: center;">
+      <!-- team carousel -->
+<div class="container-fluid">
+<div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.2s" style="padding-top: 10%;">
+        <div class="section-title text-center">
+          <h1>Our Advisors</h1>
+          <p>"&nbspBefore acquiring great power, acquire great wisdom to use it well&nbsp"</p>
+        </div>
+      </div>
+<div class="row">
+      <div class="col-md-12 col-xs-12 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Sandy" style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Prof. P Nagabhushan</h2>
+          <p class="description">Hon'ble Director, IIITA</p>
+        </div>
+      </div>
+    </div>
+<div class="row">
+      <div class="col-md-6 col-xs-12 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Dr. Vijay K. Chaurasiya</h2>
+          <p class="description">Assoc. Dean (Student Affairs)</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Dr. Rahul Kala</h2>
+          <p class="description">Faculty Advisor (Technical Council)</p>
+        </div>
+      </div>
+</div>
+<div class="row">
+      <div class="col-md-6 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Dr. Pavan Chakraborty</h2>
+          <p class="description">Faculty Advisor (Cultural Council)</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Lukia" style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Dr. Manish Kumar</h2>
+          <p class="description">Faculty Advisor (Sports Council)</p>
+        </div>
+      </div>
+</div>
+<div class="row">
+      <div class="col-md-6 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Dr. Pritish K. Varadwaj</h2>
+          <p class="description">
+Faculty Advisor (Student Welfare Council)</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/user.png" class="img-responsive img-circle" alt="Lukia" style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Dr. K. P. Singh</h2>
+          <p class="description">Faculty Advisor (Academic Council)</p>
+        </div>
+      </div>
+</div>
+</div>
+      <!-- end team carousel -->
+
+    </div>
+  </div>
+</section>
+</div>
 
 <!-- Footer section -->
 

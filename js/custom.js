@@ -14,29 +14,29 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 
 
 $(document).ready(function() {
-  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news").hide();
+  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors").hide();
     $("#tech").click(function() {
-      $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news").hide();
+      $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors").hide();
       $("#techwala").show();
     });
     $("#cult").click(function() {
-      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala,#contact, #news").hide();
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala,#contact, #news, #advisors").hide();
       $("#cultwala").show();
     });
     $("#presid").click(function() {
-      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news").hide();
+      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news, #advisors").hide();
       $("#presidwala").show();
     });
     $("#sports").click(function() {
-      $("#home, #about, #gallery, #acadwala, #cultwala, #techwala, #presidwala,#contact, #news").hide();
+      $("#home, #about, #gallery, #acadwala, #cultwala, #techwala, #presidwala,#contact, #news, #advisors").hide();
       $("#sportswala").show();
     });
     $("#acad").click(function() {
-      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #cultwala,#contact, #news").hide();
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #cultwala,#contact, #news, #advisors").hide();
       $("#acadwala").show();
     });
     $("#backhome").click(function() {
-       $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news").hide();
+       $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors").hide();
        $("#home, #about, #gallery").show(1000);
     });
     $("#cont").click(function() {
@@ -44,17 +44,21 @@ $(document).ready(function() {
       $("#contact").show(1000);
     });
     $("#newsb").click(function() {
-        $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact").hide();
+        $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors").hide();
         $("#news").show(1000);
     });
     $("#gal").click(function() {
-        $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact").hide();
+        $("#about, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors").hide();
         $("#gallery").show(1000);
     });
     $("#hof").click(function() {
-         $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact").hide();
+         $("#gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors").hide();
          $("#about").show(1000);
     });
+    $("#advi").click(function() {
+        $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news").hide();
+        $("#advisors").show(1000);
+    }); 
   });
 
     $(document).ready(function(){
