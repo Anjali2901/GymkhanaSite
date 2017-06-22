@@ -47,6 +47,14 @@ $(document).ready(function() {
         $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact").hide();
         $("#news").show(1000);
     });
+    $("#gal").click(function() {
+        $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact").hide();
+        $("#gallery").show(1000);
+    });
+    $("#hof").click(function() {
+         $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact").hide();
+         $("#about").show(1000);
+    });
   });
 
     $(document).ready(function(){
