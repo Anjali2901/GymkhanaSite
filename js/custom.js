@@ -18,22 +18,27 @@ $(document).ready(function() {
     $("#tech").click(function() {
       $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors").hide();
       $("#techwala").show();
+      $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#cult").click(function() {
       $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala,#contact, #news, #advisors").hide();
       $("#cultwala").show();
+      $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#presid").click(function() {
       $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news, #advisors").hide();
       $("#presidwala").show();
+      $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#sports").click(function() {
       $("#home, #about, #gallery, #acadwala, #cultwala, #techwala, #presidwala,#contact, #news, #advisors").hide();
       $("#sportswala").show();
+      $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#acad").click(function() {
       $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #cultwala,#contact, #news, #advisors").hide();
       $("#acadwala").show();
+      $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#backhome").click(function() {
        $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors").hide();
@@ -66,12 +71,45 @@ $(document).ready(function() {
         if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
           $("#navg").css("background-color", "#000");
           $(".navbar-right li a").css("color", "white");
-          $(".navbar-right li a").css("font-weight", "500"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+          $(".navbar-right li a").css("font-weight", "600");
+           // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
         } else {
           $("#navg").css("background-color", "transparent");
            $(".navbar-right li a").css("color", "#999");
-          $(".navbar-right li a").css("font-weight", "500"); // if not, change it back to transparent
+          $(".navbar-right li a").css("font-weight", "500");
+          $("#backhome").css("border-bottom", "2px solid black");
+         $("#hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
+           // if not, change it back to transparent
         }
+      });
+    });
+
+    $(document).ready(function() {
+      $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("background", "transparent");
+      $("#backhome").css("border-bottom", "2px solid black");
+      $("#backhome").click(function() {
+        $(this).css("border-bottom", "2px solid black").fadeIn(500);
+        $("#hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
+      });
+      $("#hof").click(function() {
+        $(this).css("border-bottom", "2px solid black").fadeIn(500);
+        $("#backhome, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
+      });
+      $("#gal").click(function() {
+        $(this).css("border-bottom", "2px solid black").fadeIn(500);
+        $("#hof, #backhome, #newsb, #advi, #cont").css("border-bottom", "0px");
+      });
+      $("#newsb").click(function() {
+        $(this).css("border-bottom", "2px solid black").fadeIn(500);
+        $("#hof, #gal, #backhome, #advi, #cont").css("border-bottom", "0px");
+      });
+      $("#advi").click(function() {
+        $(this).css("border-bottom", "2px solid black").fadeIn(500);
+        $("#hof, #gal, #newsb, #backhome, #cont").css("border-bottom", "0px");
+      });
+      $("#cont").click(function() {
+        $(this).css("border-bottom", "2px solid black").fadeIn(500);
+        $("#hof, #gal, #newsb, #advi, #backhome").css("border-bottom", "0px");
       });
     });
 

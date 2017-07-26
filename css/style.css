@@ -230,7 +230,7 @@ box-shadow: 10px 15px 18px -1px rgba(207,203,207,1);
   margin: 0;
 }
 
-.navbar-default .navbar-nav li a {
+/*.navbar-default .navbar-nav li a {
     color: #777;
     font-size: 14px;
     font-weight: 300;
@@ -287,11 +287,12 @@ box-shadow: 10px 15px 18px -1px rgba(207,203,207,1);
 
 .navbar-default .navbar-nav > li a:hover {
     color: #304352 !important;
-}
+}*/
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: rgb(247,202,24);
+    color: #304352;
+    font-weight: 600;
     background-color: transparent;
 }
 
@@ -299,10 +300,11 @@ box-shadow: 10px 15px 18px -1px rgba(207,203,207,1);
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #304352;
+    font-weight: 600;
     background-color: transparent;
 }
 
-.navbar-default .navbar-toggle {
+/*.navbar-default .navbar-toggle {
      border: none;
      padding-top: 10px;
   }
@@ -310,13 +312,14 @@ box-shadow: 10px 15px 18px -1px rgba(207,203,207,1);
 .navbar-default .navbar-toggle .icon-bar {
     border-color: transparent;
   }
-
+*/
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus { 
+  font-weight: 600;
   background-color: transparent;
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   
   .navbar-default .navbar-nav li a span:before {
     background: transparent !important;
@@ -331,7 +334,7 @@ box-shadow: 10px 15px 18px -1px rgba(207,203,207,1);
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-}
+}*/
 
 
 
