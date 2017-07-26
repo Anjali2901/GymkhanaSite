@@ -71,7 +71,7 @@ $(document).ready(function() {
         if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
           $("#navg").css("background-color", "#000");
           $(".navbar-right li a").css("color", "white");
-          $(".navbar-right li a").css("font-weight", "600");
+          $(".navbar-right li a").css("font-weight", "500");
            // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
         } else {
           $("#navg").css("background-color", "transparent");

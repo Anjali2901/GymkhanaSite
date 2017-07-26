@@ -291,16 +291,16 @@ box-shadow: 10px 15px 18px -1px rgba(207,203,207,1);
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #304352;
-    font-weight: 600;
+    color: #000;
+    font-weight: 500;
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #304352;
-    font-weight: 600;
+    color: #000;
+    font-weight: 500;
     background-color: transparent;
 }
 
@@ -315,7 +315,7 @@ box-shadow: 10px 15px 18px -1px rgba(207,203,207,1);
 */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus { 
-  font-weight: 600;
+  font-weight: 500;
   background-color: transparent;
 }
 
