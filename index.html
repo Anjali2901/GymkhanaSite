@@ -32,8 +32,8 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 	<!-- Google web font  -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <style type="text/css">
   html {
     height: 100%;
@@ -81,29 +81,6 @@ font-size: 1.25em;
       font-family: 'Source Sans Pro', sans-serif;
    }
   </style>
-  <script type="text/javascript">
-    $.preload ( 'images/academic.png',
-    'images/academic2.png',
-    'images/apak.jpg',
-    'images/bg.jpg',
-    'images/close.png',
-    'images/councils.png',
-    'images/cultural.png',
-    'images/cultural2.png',
-    'images/effe.jpg',
-    'images/favicon.ico',
-    'images/glogo-2.png',
-'images/glogo-1.png',
-'images/academic.png',
-'images/hint.jpg',
-'images/logo.png',
-'images/user.png',
-'images/sports.png',
-'images/sports2.png',
-'images/technical.png',
-'images/technical2.png'
-    );
-  </script>
 </head>
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 <div id="total">
@@ -124,30 +101,34 @@ font-size: 1.25em;
 
 
 <!-- Navigation section  -->
-
+<div class="container">
   <div class="navbar navbar-default navbar-fixed-top" id="navg" role="navigation">
-    <div class="container">
+<div class="container">
 
      <div class="navbar-header">
-        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#" style="padding-bottom: 10px;margin-bottom: 30px;margin-top: 0px;"><img height="75px" src="images/glogo-1.png" width="75px"></a>
+        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span>
+        </button> 
+        <a class="navbar-brand" href="#" style="padding-bottom: 10px;margin-bottom: 30px;margin-top: 0px;"><img height="75px" src="images/glogo-1.png" width="75px" style="max-width: 75px; max-height: 75px;"></a>
       </div><!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" style="margin-top: 20px;">
           <ul class="nav navbar-nav navbar-right">
           <li><a href="#top"  id="backhome"><span>HOME</span></a></li>
-            <!-- <li><a href="#top" ><span>ABOUT US</span></a></li> -->
             <li><a href="#about"  id="hof"><span>HALL OF FAME</span></a></li>
             <li><a href="#gallery"  id="gal"><span>GALLERY</span></a></li>
             <li><a href="#news"  id="newsb"><span>NEWS</span></a></li>
             <li><a href="#advisors"  id="advi"><span>ADVISORS</span></a></li>
              <li><a href="#contact"  id="cont"><span>CONTACT</span></a></li>
-<!--             <li><a href="#contact" class="smoothScroll"><span></span></a></li> -->
           </ul>
        </div>
 
     </div>
   </div>
 
-
+</div>
 
 <!-- Home section -->
 
@@ -159,7 +140,7 @@ font-size: 1.25em;
         <div class="logo-container">
           <h1 class="test" id="main"><img height="400" id="main-logo" src="images/glogo-2.png" width="400"></h1>
         </div>
-        <h1 class="wow fadeInUp" data-wow-delay="1.5s" style="font-size: 30px;color: black;padding-bottom: 7%;">The Student Senate of IIIT Allahabad</h1>
+        <h1 class="wow fadeInUp" data-wow-delay="1.5s" style="font-size: 30px;color: black;padding-bottom: 7%;z-index: -100;" id="sen">The Student Senate of IIIT Allahabad</h1>
         <!-- <a href="#about" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s" style="margin-bottom: 5%;">Councils</a> -->
         <!-- <div class="row">
           <div class = "col-lg-6 col-sm-6" id  = "content-1">Hi, we are the Gymkhana.
@@ -181,7 +162,7 @@ font-size: 1.25em;
               <div class = "col-lg-4 col-sm-4" id = "blank">    
               <div id="stage">
         <div id="circle-menu">
-          <a class="menu-trigger" data-close="" data-open="" href="#"><!-- <i aria-hidden="true" class="fa fa-power-off"></i> --></a>
+          <a class="menu-trigger" data-close="" data-open="" href="#" id="coun" ><!-- <i aria-hidden="true" class="fa fa-power-off"></i> --></a>
           <ul>
             <li id="tech">
               <a class="link" href="#"></a>
@@ -198,6 +179,9 @@ font-size: 1.25em;
               <a class="link" href="#"></a>
             </li>
             <li id="sports">
+              <a class="link" href="#"></a>
+            </li>
+            <li id="stw">
               <a class="link" href="#"></a>
             </li>
             
@@ -630,6 +614,89 @@ The council responsible for decision-making in all academic matters. This counci
 </section>
 </div>
 
+<div id="stuwelfare">
+<!-- 3 -->
+<section class="techDet" style="margin: 0 auto;text-align: center;">
+      <!-- team carousel -->
+<div class="container-fluid">
+<div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.2s" style="padding-top: 10%;">
+        <div class="section-title text-center">
+          <h1>Student Welfare Council</h1>
+          <p>
+This council looks after the following areas- hostel affairs, discipline, infrastructure and grievance redressal. It must act in the general interest of the Senate and take up matters affecting the welfare of the students as well as the Institute.</p>
+        </div>
+      </div>
+<div class="row">
+      <div class="col-md-12 col-xs-12 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/prankur.jpg" class="img-responsive img-circle" alt="Sandy" style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Prankur Agarwal</h2>
+          <p class="description">Secretary</p>
+        </div>
+      </div>
+</div>
+<div class="row">
+      <div class="col-md-6 col-xs-12 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/rswami.jpg" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Rahul Swami </h2>
+          <p class="description">Member</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-xs-12 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/sanchit.jpg" class="img-responsive img-circle" alt="Lukia" style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Sanchit</h2>
+          <p class="description">Member</p>
+        </div>
+      </div>
+</div>
+<div class="row">
+      <div class="col-md-4 col-xs-12 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/msy.jpg" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Mulayam Singh Yadav</h2>
+          <p class="description">Member</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-12 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/rarora.jpg" class="img-responsive img-circle" alt="Lukia"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Ridam Arora</h2>
+          <p class="description">Member</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-4 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="images/bittu.jpg" class="img-responsive img-circle" alt="Sandy"  style="box-shadow: 0 15px 14px rgba(10, 10, 10, 0.2); ">
+          </div>
+          <h2 class="heading">Bittu</h2>
+          <p class="description">Member</p>
+        </div>
+      </div>
+</div>
+</div>
+      <!-- end team carousel -->
+
+    </div>
+  </div>
+</section>
+</div>
+
 <div id="presidwala">
 <!-- 4 -->
 <section class="techDet" style="margin: 0 auto;text-align: center;">
@@ -1042,6 +1109,8 @@ Faculty Advisor (Student Welfare Council)</p>
 
 <!-- Javascript  -->
 <script src="js/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.preloader/1.0.0/jquery.preloader.js"></script>
 <script src="js/index.js"></script>
 <script src="js/bootstrap.min.js"></script>

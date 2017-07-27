@@ -12,9 +12,44 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 });
 });
 
+$(document).ready(function() {
+  var c = 0;
+  $("#coun").click(function() {
+    c++;
+    if(c%2 == 1) {
+      $("#sen").css("filter", "blur(5px)");
+    }
+    else {
+      $("#sen").css("filter", "blur(0px)");
+    }
+  });
+});
+
+// $.preload ( 'images/academic.png',
+//     'images/academic2.png',
+//     'images/apak.jpg',
+//     'images/bg.jpg',
+//     'images/close.png',
+//     'images/councils.png',
+//     'images/cultural.png',
+//     'images/cultural2.png',
+//     'images/effe.jpg',
+//     'images/favicon.ico',
+//     'images/glogo-2.png',
+// 'images/glogo-1.png',
+// 'images/academic.png',
+// 'images/hint.jpg',
+// 'images/logo.png',
+// 'images/user.png',
+// 'images/sports.png',
+// 'images/sports2.png',
+// 'images/technical.png',
+// 'images/technical2.png'
+//     );
+
 
 $(document).ready(function() {
-  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors").hide();
+  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors, #stuwelfare").hide();
     $("#tech").click(function() {
       $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors").hide();
       $("#techwala").show();
@@ -38,6 +73,11 @@ $(document).ready(function() {
     $("#acad").click(function() {
       $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #cultwala,#contact, #news, #advisors").hide();
       $("#acadwala").show();
+      $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
+    });
+    $("#stw").click(function() {
+      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news, #advisors, #presidwala").hide();
+      $("#stuwelfare").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#backhome").click(function() {

@@ -805,18 +805,18 @@ filter:grayscale(0);
 }
 #circle-menu ul li:nth-child(6) {
   background-color: #926517;
-    background:url('../images/presidential.png');
+    background:url('../images/sw-2.png');
   background-size: contain;
   background-repeat: no-repeat;
 
 }
-#circle-menu ul li:nth-child(7) {
+/*#circle-menu ul li:nth-child(7) {
   background-color: #8e44ad;
     background:url('../images/presidential.png');
   background-size: contain;
   background-repeat: no-repeat;
 
-}
+}*/
 #circle-menu ul li a {
   color: #fff;
   font-size: 2.5rem;
@@ -878,9 +878,9 @@ filter:grayscale(0);
 
 }
 #circle-menu.open ul li:nth-child(4) {
-  -webkit-transform: translate3D(-0.5em,-14em,0);
-  -ms-transform: translate3D(-0.5em,-14em,0);
-  transform: translate3D(-5.9em,-14.5em,0);
+  -webkit-transform: translate3D(-2em,-10em,0);
+  -ms-transform: translate3D(-2em,-10em,0);
+  transform: translate3D(-14.5em,-10em,0);
 
 }
 #circle-menu.open ul li:nth-child(5) {
@@ -892,7 +892,7 @@ filter:grayscale(0);
 #circle-menu.open ul li:nth-child(6) {
   -webkit-transform: translate3D(0em,-12em,0);
   -ms-transform: translate3D(0em,-12em,0);
-  transform: translate3D(-1em,-12em,0);
+  transform: translate3D(2em,-10em,0);
 
 }
 #circle-menu.open ul li:hover:nth-child(1) {
@@ -932,6 +932,13 @@ filter:grayscale(0);
 
 #circle-menu.open ul li:hover:nth-child(5) {
   background:url('../images/sports2.png');
+    background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+#circle-menu.open ul li:hover:nth-child(6) {
+  background:url('../images/sw.png');
     background-size: contain;
     cursor: pointer;
     background-repeat: no-repeat;
