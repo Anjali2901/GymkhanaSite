@@ -25,27 +25,7 @@ $(document).ready(function() {
   });
 });
 
-// $.preload ( 'images/academic.png',
-//     'images/academic2.png',
-//     'images/apak.jpg',
-//     'images/bg.jpg',
-//     'images/close.png',
-//     'images/councils.png',
-//     'images/cultural.png',
-//     'images/cultural2.png',
-//     'images/effe.jpg',
-//     'images/favicon.ico',
-//     'images/glogo-2.png',
-// 'images/glogo-1.png',
-// 'images/academic.png',
-// 'images/hint.jpg',
-// 'images/logo.png',
-// 'images/user.png',
-// 'images/sports.png',
-// 'images/sports2.png',
-// 'images/technical.png',
-// 'images/technical2.png'
-//     );
+
 
 
 $(document).ready(function() {

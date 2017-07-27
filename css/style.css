@@ -751,8 +751,8 @@ filter:grayscale(0);
 }
 #circle-menu ul li {
   position: absolute;
-  max-width: 12em;
-  max-height: 12em;
+  width: 12em;
+  height: 12em;
   display: inline-block;
   -webkit-border-radius: 50%;
   -webkit-background-clip: padding-box;
