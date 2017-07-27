@@ -753,8 +753,6 @@ filter:grayscale(0);
   position: absolute;
   max-width: 12em;
   max-height: 12em;
-  min-width: 4em;
-  min-height: 4em;
   display: inline-block;
   -webkit-border-radius: 50%;
   -webkit-background-clip: padding-box;
