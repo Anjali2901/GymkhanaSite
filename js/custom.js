@@ -29,60 +29,64 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors, #stuwelfare").hide();
+  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors, #stuwelfare, #tenders").hide();
     $("#tech").click(function() {
-      $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors").hide();
+      $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors, #tenders").hide();
       $("#techwala").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#cult").click(function() {
-      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala,#contact, #news, #advisors").hide();
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala,#contact, #news, #advisors, #tenders").hide();
       $("#cultwala").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#presid").click(function() {
-      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news, #advisors").hide();
+      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news, #advisors, #tenders").hide();
       $("#presidwala").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#sports").click(function() {
-      $("#home, #about, #gallery, #acadwala, #cultwala, #techwala, #presidwala,#contact, #news, #advisors").hide();
+      $("#home, #about, #gallery, #acadwala, #cultwala, #techwala, #presidwala,#contact, #news, #advisors, #tenders").hide();
       $("#sportswala").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#acad").click(function() {
-      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #cultwala,#contact, #news, #advisors").hide();
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #cultwala,#contact, #news, #advisors, #tenders").hide();
       $("#acadwala").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#stw").click(function() {
-      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news, #advisors, #presidwala").hide();
+      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news, #advisors, #presidwala, #tenders").hide();
       $("#stuwelfare").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#backhome").click(function() {
-       $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors").hide();
+       $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors, #tenders").hide();
        $("#home, #about, #gallery").show(1000);
     });
     $("#cont").click(function() {
-      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #news").hide();
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #news, #tenders").hide();
       $("#contact").show(1000);
     });
     $("#newsb").click(function() {
-        $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors").hide();
+        $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors, #tenders").hide();
         $("#news").show(1000);
     });
     $("#gal").click(function() {
-        $("#about, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors").hide();
+        $("#about, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors, #tenders").hide();
         $("#gallery").show(1000);
     });
     $("#hof").click(function() {
-         $("#gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors").hide();
+         $("#gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors, #tenders").hide();
          $("#about").show(1000);
     });
     $("#advi").click(function() {
-        $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news").hide();
+        $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #tenders").hide();
         $("#advisors").show(1000);
+    }); 
+    $("#ten").click(function() {
+        $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors").hide();
+        $("#tenders").show(1000);
     }); 
   });
 
@@ -105,31 +109,35 @@ $(document).ready(function() {
     });
 
     $(document).ready(function() {
-      $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("background", "transparent");
+      $("#backhome, #hof, #gal, #newsb, #advi, #cont,#ten").css("background", "transparent");
       $("#backhome").css("border-bottom", "2px solid black");
       $("#backhome").click(function() {
         $(this).css("border-bottom", "2px solid black").fadeIn(500);
-        $("#hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
+        $("#hof, #gal, #newsb, #advi, #cont,#ten").css("border-bottom", "0px");
       });
       $("#hof").click(function() {
         $(this).css("border-bottom", "2px solid black").fadeIn(500);
-        $("#backhome, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
+        $("#backhome, #gal, #newsb, #advi, #cont,#ten").css("border-bottom", "0px");
       });
       $("#gal").click(function() {
         $(this).css("border-bottom", "2px solid black").fadeIn(500);
-        $("#hof, #backhome, #newsb, #advi, #cont").css("border-bottom", "0px");
+        $("#hof, #backhome, #newsb, #advi, #cont,#ten").css("border-bottom", "0px");
       });
       $("#newsb").click(function() {
         $(this).css("border-bottom", "2px solid black").fadeIn(500);
-        $("#hof, #gal, #backhome, #advi, #cont").css("border-bottom", "0px");
+        $("#hof, #gal, #backhome, #advi, #cont,#ten").css("border-bottom", "0px");
       });
       $("#advi").click(function() {
         $(this).css("border-bottom", "2px solid black").fadeIn(500);
-        $("#hof, #gal, #newsb, #backhome, #cont").css("border-bottom", "0px");
+        $("#hof, #gal, #newsb, #backhome, #cont,#ten").css("border-bottom", "0px");
       });
       $("#cont").click(function() {
         $(this).css("border-bottom", "2px solid black").fadeIn(500);
-        $("#hof, #gal, #newsb, #advi, #backhome").css("border-bottom", "0px");
+        $("#hof, #gal, #newsb, #advi, #backhome,#ten").css("border-bottom", "0px");
+      });
+      $("#ten").click(function() {
+        $(this).css("border-bottom", "2px solid black").fadeIn(500);
+        $("#hof, #gal, #newsb, #backhome, #cont, #advi").css("border-bottom", "0px");
       });
     });
 
